@@ -1,0 +1,15 @@
+#version 330 core
+
+uniform mat4 worldMatrix;
+uniform mat4 viewMatrix, projMatrix;
+
+in vec3 in_Position;
+
+in vec2 vertexUV;
+out vec2 UV;
+
+void main()
+{
+	gl_Position =  projMatrix * viewMatrix * worldMatrix * vec4(in_Position,1);
+	UV = vertexUV;
+}

@@ -1,0 +1,26 @@
+#version 330
+uniform sampler2D myTextureSampler;
+uniform sampler2D myNormalSampler;
+
+in VERTIOUT {
+    vec3 position;
+		vec2 uv;
+		vec3 normal;
+} verticeIn;
+
+out vec4 out_Color;
+//uniform vec3 lightPos;
+
+in vec3 LightDirection_tangentspace;
+
+
+void main(void)
+{
+		vec3 N = normalize(verticeIn.normal);
+		vec3 L = LightDirection_tangentspace;//normalize(LightDirection_tangentspace - verticeIn.position);
+		vec3 diffuseCon =  vec3(0.3, 0.3, 0.3) * max(dot(N, L), 0);
+
+		//vec3 minuCol = texture( myTextureSampler, verticeIn.uv ).rgb * 0.001f;
+		vec3 addColor = texture( myTextureSampler, verticeIn.uv ).rgb + diffuseCon;
+		out_Color =  vec4(addColor,1.0);
+}

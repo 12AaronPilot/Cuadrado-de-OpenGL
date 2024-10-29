@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{44f8bf42-3974-40e9-b483-4af2be822f1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{b181767b-a84f-48f9-acad-6dfc2a6313ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{b830baca-32ca-4888-b456-fa299c5d4341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objects">
+      <UniqueIdentifier>{99208976-7352-4ba0-9463-2c45318cf079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\shaders">
+      <UniqueIdentifier>{63c376b9-525f-4a50-aed3-4fda0129ac5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\meshes">
+      <UniqueIdentifier>{1c0dc0ac-6e8c-4541-b751-5a904772dbfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\textures">
+      <UniqueIdentifier>{ec8b14a3-8b68-44d4-b13f-b2a0af8a637a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\main.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\OGLApp.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\WinApplication.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\opengl.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\mathfunc.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\shaders\ShaderBase.cpp">
+      <Filter>graphics\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\shaders\ShaderColor.cpp">
+      <Filter>graphics\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\textures\lodepng.cpp">
+      <Filter>graphics\textures</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\shaders\ShaderNMap.cpp">
+      <Filter>graphics\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\shaders\ShaderNone.cpp">
+      <Filter>graphics\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="core\GameTimer.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\OGLApp.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\WinApplication.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\opengl.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\mathfunc.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\shaders\ShaderBase.h">
+      <Filter>graphics\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\shaders\ShaderColor.h">
+      <Filter>graphics\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\textures\lodepng.h">
+      <Filter>graphics\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\shaders\ShaderNMap.h">
+      <Filter>graphics\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\shaders\ShaderNone.h">
+      <Filter>graphics\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="core\GameTimer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\vertexnred.pxs">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\vertexnred.vxs">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\color.pxs">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\color.vxs">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+</Project>
